@@ -1,0 +1,15 @@
+# .NET
+bin/
+obj/
+appsettings.Development.json
+
+# Node
+node_modules/
+build/
+
+# Editors / OS
+.vs/
+.vscode/
+*.user
+.DS_Store
+Thumbs.db
