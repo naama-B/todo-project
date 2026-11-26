@@ -23,7 +23,7 @@ var app = builder.Build();
 
 app.UseCors();
 
-if (app.Environment.IsDevelopment())
+//if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
@@ -61,5 +61,5 @@ app.MapDelete("/items/{id}", async (ToDoDbContext db, int id) =>
     await db.SaveChangesAsync();
     return Results.NoContent();
 });
-
+app.MapGet("/", () => "\"AuthServer API is running!");
 app.Run();
